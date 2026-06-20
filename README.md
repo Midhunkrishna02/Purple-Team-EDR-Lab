@@ -12,7 +12,7 @@ Host-level process behavior and raw socket connections were streamed via an ente
 * **Hypervisor Environment:** QEMU / KVM 
 * **Victim Endpoint (Guest OS):** Windows 10 Enterprise x86_64 (`desktop-5o67a44`)
 * **Internal Network Layout:** Isolated QEMU NAT Bridge Subnet (`192.168.122.0/24`)
-* **Target Asset IP Address:** `192.168.1.1`
+* **Target Asset IP Address:** `192.168.x.x`
 * **EDR Telemetry Engine:** LimaCharlie Cloud Sensor Architecture
 
 ---
@@ -27,7 +27,7 @@ Establishing an uncompromised endpoint telemetry baseline was mandatory prior to
    
    hcp_windows_x64.exe -i <YOUR_UNIQUE_INSTALLATION_KEY>
    
-5. **Enrollment Verification:** Monitored the cloud console to ensure active endpoint telemetry sync. The host machine `desktop-5o67a44` checking in from `192.168.122.87` confirmed successful integration and real-time process monitoring synchronization.
+5. **Enrollment Verification:** Monitored the cloud console to ensure active endpoint telemetry sync. The host machine `desktop-5o67a44` checking in from `192.168.x.x` confirmed successful integration and real-time process monitoring synchronization.
 
 ![LimaCharlie Active Sensor Onboarding](images/1_sensor_verification.png)
 
@@ -36,7 +36,7 @@ Establishing an uncompromised endpoint telemetry baseline was mandatory prior to
 ## Phase 2: The Attack (Adversary Simulation)
 To simulate the initial access and network service discovery phase of an attack lifecycle (**MITRE ATT&CK Framework: T1046 - Network Service Discovery**), an aggressive service identification and rapid port scan sequence was executed from the Kali Linux host terminal interface directly targeting the virtualized subnet node:
 
-   nmap -F 192.168.122.87
+   nmap -F 192.168.x.x
 
 ---
 
