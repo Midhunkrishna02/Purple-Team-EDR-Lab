@@ -1,0 +1,73 @@
+{
+  "event": {
+    "COMMAND_LINE": "C:\\Windows\\system32\\svchost.exe -k LocalServiceAndNoImpersonation -p",
+    "CREATION_TIME": 1781960410704,
+    "FILE_IS_SIGNED": 1,
+    "FILE_PATH": "C:\\Windows\\system32\\svchost.exe",
+    "HASH": "643ec58e82e0272c97c2a59f6020970d881af19c0ad5029db9c958c13b6558c7",
+    "NETWORK_ACTIVITY": [
+      {
+        "DESTINATION": {
+          "IP_ADDRESS": "239.255.255.250",
+          "PORT": 1900
+        },
+        "IS_OUTGOING": 1,
+        "PROTOCOL": "udp4",
+        "SOURCE": {
+          "IP_ADDRESS": "192.168.122.87",
+          "PORT": 52968
+        },
+        "TIMESTAMP": 1781963800733
+      },
+      {
+        "DESTINATION": {
+          "IP_ADDRESS": "239.255.255.250",
+          "PORT": 1900
+        },
+        "IS_OUTGOING": 1,
+        "PROTOCOL": "udp4",
+        "SOURCE": {
+          "IP_ADDRESS": "127.0.0.1",
+          "PORT": 52969
+        },
+        "TIMESTAMP": 1781963800733
+      },
+      {
+        "DESTINATION": {
+          "IP_ADDRESS": "239.255.255.250",
+          "PORT": 1900
+        },
+        "IS_OUTGOING": 0,
+        "PROTOCOL": "udp4",
+        "SOURCE": {
+          "IP_ADDRESS": "127.0.0.1",
+          "PORT": 52969
+        },
+        "TIMESTAMP": 1781963800733
+      }
+    ],
+    "PARENT_PROCESS_ID": 660,
+    "PROCESS_ID": 2488,
+    "USER_NAME": "NT AUTHORITY\\LOCAL SERVICE"
+  },
+  "routing": {
+    "arch": 2,
+    "did": "",
+    "event_id": "02127c5d-48be-4d86-97e5-f2a7596b7b29",
+    "event_time": 1781963826280,
+    "event_type": "NETWORK_CONNECTIONS",
+    "ext_ip": "111.92.83.80",
+    "hostname": "desktop-5o67a44",
+    "iid": "a14ef1db-2e65-41b4-9d92-36b32a5ca616",
+    "int_ip": "192.168.122.87",
+    "latency": 986,
+    "moduleid": 2,
+    "oid": "5981d03e-fb3d-4bfd-ab1f-33faaa072af5",
+    "parent": "93d3466c83124535cbab4cb76a368f6e",
+    "plat": 268435456,
+    "sid": "11269dd8-6f9e-427c-b05c-1ebbe318d958",
+    "tags": [],
+    "this": "1ef6deda30e4c493e25e938e6a369c32"
+  },
+  "ts": "2026-06-20 13:57:06"
+}
