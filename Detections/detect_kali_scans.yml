@@ -1,0 +1,12 @@
+# LimaCharlie Detection & Response (D&R) Rule
+# Target: Inbound Reconnaissance / Port Scanning Array Ingestion
+
+detect:
+  event: NETWORK_CONNECTIONS
+  op: starts with
+  path: event/NETWORK_ACTIVITY/?/DESTINATION/IP_ADDRESS
+  value: 192.168.122.
+
+response:
+  - action: report
+    name: Kali Linux Scan Detected
